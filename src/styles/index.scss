@@ -6,7 +6,6 @@ $catalog-padding-horizontal: 40px;
 $color-nav: #060b35;
 $color-link-hover: #00acdc;
 
-
 html,
 body {
   margin: 0;
@@ -102,7 +101,7 @@ body {
     transition: color 300ms;
   }
 
-  &__code{
+  &__code {
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
