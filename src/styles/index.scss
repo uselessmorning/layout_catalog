@@ -5,6 +5,7 @@ $catalog-padding-vertical: 50px;
 $catalog-padding-horizontal: 40px;
 $color-nav: #060b35;
 $color-link-hover: #00acdc;
+$color-text: #616070;
 
 html,
 body {
@@ -114,7 +115,7 @@ p {
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    color: #616070;
+    color: $color-text;
     margin-bottom: 16px;
   }
 
@@ -142,7 +143,7 @@ p {
     line-height: 18px;
 
     vertical-align: bottom;
-    color: #616070;
+    color: $color-text;
   }
 
   &__number {
@@ -174,6 +175,10 @@ p {
     align-items: center;
     border-radius: 5px;
     background-color: $color-link-hover;
+    transition:
+      transform 300ms background-color 300ms,
+      color 300ms,
+      border 300ms;
 
     width: 166px;
     height: 40px;
@@ -198,10 +203,6 @@ p {
     border: 1px solid $color-link-hover;
     background-color: #fff;
     transform: scale(1.2);
-    transition:
-      transform 300ms background-color 300ms,
-      color 300ms,
-      border 300ms;
   }
 
   &__review-container {
